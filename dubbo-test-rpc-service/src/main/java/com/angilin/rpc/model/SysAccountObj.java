@@ -1,6 +1,7 @@
 package com.angilin.rpc.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class SysAccountObj implements Serializable{
 
@@ -9,6 +10,8 @@ public class SysAccountObj implements Serializable{
 	private String accountName;
 	
 	private String accountNickName;
+	
+	private List<Object> pets;
 	
 	public SysAccountObj(){
 		
@@ -30,4 +33,13 @@ public class SysAccountObj implements Serializable{
 		this.accountNickName = accountNickName;
 	}
 
+	public List<Object> getPets() {
+		return pets;
+	}
+
+	public void setPets(List<Object> pets) {
+		this.pets = pets;
+	}
+
+	
 }
